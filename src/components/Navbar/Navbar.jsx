@@ -1,31 +1,19 @@
 import * as s from "./NavbarStyles";
+import logo from "/img/comicuniverse.png"
 export const Navbar = () => {
   return (
     <s.NavHeaderStled>
-      <img src="#" alt="logo" />
-      <s.NavbarStled>
-        {/* <label for="menu-toggle" class="menu-label"> */}
-        {/* <img src="img/menu.png" alt="menu" class="menu-icon" /> */}
-        {/* </label> */}
+      <img src={logo} alt="logo" />
+      <s.NavbarContainer>
+        {/* <label for="menu-toggle" class="menu-label">
+        <img src="img/menu.png" alt="menu" class="menu-icon" />
+        </label> */}
         {/* <input type="checkbox" id="menu-toggle" /> */}
-        <ul>
-          <li>
-            <a href="login.html">Login</a>
-          </li>
-          <li>
-            <a href="registro.html">Registro</a>
-          </li>
-          <li>
+        <s.NavbarItemsSteled>
             <a href="#about">Nosotros</a>
-          </li>
-          <li>
             <a href="#cards">Noticias</a>
-          </li>
-          <li>
-            <a href="#contacto">Contactanos</a>
-          </li>
-        </ul>
-      </s.NavbarStled>
+        </s.NavbarItemsSteled>
+      </s.NavbarContainer>
     </s.NavHeaderStled>
   );
 };
