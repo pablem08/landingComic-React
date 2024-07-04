@@ -1,11 +1,11 @@
+import { Navbar } from "./components/Navbar/Navbar";
 
 function App() {
-  
   return (
     <>
-      <h1>Arrancando Ando</h1>
+      <Navbar />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
