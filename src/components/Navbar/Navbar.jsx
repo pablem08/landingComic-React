@@ -1,5 +1,5 @@
 import * as s from "./NavbarStyles";
-import logo from "/img/comicuniverse.png"
+import logo from "/img/comicuniverse_3.png"
 export const Navbar = () => {
   return (
     <s.NavHeaderStled>
