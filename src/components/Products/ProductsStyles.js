@@ -24,14 +24,20 @@ export const ProductCardStyled = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  /* border: 1px solid red; */
   max-width: 350px;
+  box-shadow: 0 0 10px #0f58b8, 0 0 40px #0f58b8;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out; /* Aplica la transición en el estado normal */
+
+  &:hover {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.1);
+    /* La transición ya está definida en el estado normal */
+  }
 
   img {
     width: 350px;
     height: 420px;
-    /* border-top-right-radius: 20px;
-    border-top-left-radius: 20px; */
   }
 `;
 
