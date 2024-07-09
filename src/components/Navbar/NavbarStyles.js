@@ -13,6 +13,10 @@ export const NavHeaderStled = styled.header`
     margin-left: 40px;
     width: 100px;
   }
+
+  @media (max-width: 768px) {
+    z-index: 2;
+  }
 `;
 
 export const NavbarContainer = styled.div`
@@ -44,6 +48,7 @@ export const NavbarItemsSteled = styled.div`
   font-size: 1.2rem;
   display: flex;
   align-items: center;
+  margin-right: 15px;
 
   @media (max-width: 768px) {
     display: none;

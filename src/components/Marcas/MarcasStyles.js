@@ -6,6 +6,9 @@ export const HeroMarcaStyled = styled.div`
   justify-content: center;
   align-items: center;
   gap: 40px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const HeroCardMarcaStyled = styled.div`

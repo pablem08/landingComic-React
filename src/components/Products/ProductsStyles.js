@@ -7,6 +7,15 @@ export const ProductsContainerStyled = styled.section`
   align-items: center;
   margin-top: 100px;
   gap: 30px;
+  h2 {
+    font-size: 3rem;
+    color: #ffe527;
+    text-shadow: 3px 3px 1px #f79d14;
+    margin-top: 2rem;
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
 `;
 
 export const ProductCardContainerStyled = styled.div`
@@ -39,6 +48,11 @@ export const ProductCardStyled = styled.div`
     width: 350px;
     height: 420px;
   }
+
+  @media (max-width: 768px) {
+    pointer-events: none;
+  }
+
 `;
 
 export const ProductCardInfoStyled = styled.div`
@@ -68,4 +82,8 @@ export const ButtonContainerStyled = styled.div`
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
+
+  @media (max-width: 768px) {
+      pointer-events: none;
+    }
 `;

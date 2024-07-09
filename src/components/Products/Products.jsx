@@ -7,6 +7,7 @@ import { Button } from "../UI/Button/Button.jsx";
 export const Products = () => {
   return (
     <st.ProductsContainerStyled>
+      <h2>Nuestros Productos</h2>
       <st.ProductCardContainerStyled>
         <st.ProductCardStyled>
           <img src={comicBatman} alt="" />
@@ -14,7 +15,7 @@ export const Products = () => {
             <h3>Batman n°9</h3>
 
             <st.ButtonContainerStyled>
-              <Button radius={10}>Ver más</Button>
+              <Button>Ver más</Button>
             </st.ButtonContainerStyled>
           </st.ProductCardInfoStyled>
         </st.ProductCardStyled>
@@ -25,7 +26,7 @@ export const Products = () => {
             <h3>Spiderman n°15</h3>
 
             <st.ButtonContainerStyled>
-              <Button radius={10}>Ver más</Button>
+              <Button>Ver más</Button>
             </st.ButtonContainerStyled>
           </st.ProductCardInfoStyled>
         </st.ProductCardStyled>
@@ -36,7 +37,7 @@ export const Products = () => {
             <h3>Superman n°1</h3>
 
             <st.ButtonContainerStyled>
-              <Button radius={10}>Ver más</Button>
+              <Button>Ver más</Button>
             </st.ButtonContainerStyled>
           </st.ProductCardInfoStyled>
         </st.ProductCardStyled>
