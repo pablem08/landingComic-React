@@ -6,7 +6,7 @@ export const Button = styled(motion.button)`
   color: #0f58b8; /* color de fuente */
   border: 2px solid #0f58b8; /* tamaño y color de borde */
   padding: 16px 20px;
-  border-radius: 3px; /* redondear bordes */
+  border-radius: 10px; /* redondear bordes */
   position: relative;
   z-index: 1;
   overflow: hidden;
