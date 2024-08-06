@@ -11,7 +11,7 @@ export const AboutContainer = styled.div`
     font-size: 3rem;
     color: #ffe527;
     text-shadow: 3px 3px 1px #f79d14;
-    margin-top: 2rem;
+    margin-top: 8rem;
     @media (max-width: 768px) {
       font-size: 2rem;
     }

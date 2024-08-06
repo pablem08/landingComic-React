@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeroContainer = styled.section`
+export const HomeContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,15 +8,15 @@ export const HeroContainer = styled.section`
   width: 100%;
 `;
 
-export const HeroContainerImg = styled.div`
+export const HomeContainerImg = styled.div`
   width: 100%;
   img {
     width: 100%;
     padding-bottom: 75px;
 
     @media (max-width: 768px) {
-    margin-top: 80px;
-  }
+      margin-top: 80px;
+    }
   }
 
   h1 {
@@ -33,7 +33,7 @@ export const HeroContainerImg = styled.div`
     text-shadow: 3px 3px 1px #f79d14;
     /* border: 1px solid red; */
     @media (max-width: 768px) {
-    display: none;
-  }
+      display: none;
+    }
   }
 `;

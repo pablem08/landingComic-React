@@ -5,13 +5,13 @@ export const ProductsContainerStyled = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 0px;
   gap: 30px;
   h2 {
     font-size: 3rem;
     color: #ffe527;
     text-shadow: 3px 3px 1px #f79d14;
-    margin-top: 2rem;
+    margin-top: 8rem;
     @media (max-width: 768px) {
       font-size: 2rem;
     }
@@ -52,7 +52,6 @@ export const ProductCardStyled = styled.div`
   @media (max-width: 768px) {
     pointer-events: none;
   }
-
 `;
 
 export const ProductCardInfoStyled = styled.div`
@@ -84,6 +83,6 @@ export const ButtonContainerStyled = styled.div`
   padding-bottom: 20px;
 
   @media (max-width: 768px) {
-      pointer-events: none;
-    }
+    pointer-events: none;
+  }
 `;

@@ -2,7 +2,7 @@ import * as st from "./ProductsStyles.js";
 import comicBatman from "/img/Marcas/comicBatman.jpeg";
 import comicSpidy from "/img/Marcas/comicSpidy.jpeg";
 import comicSuperman from "/img/Marcas/comicSuperman.jpeg";
-import { Button } from "../UI/Button/Button.jsx";
+import { Button } from "../../components/UI/Button/Button.jsx";
 
 export const Products = () => {
   return (

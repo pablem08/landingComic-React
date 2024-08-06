@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import Navbar from "../Navbar/Navbar";
+import { Navbar } from "../Navbar/Navbar";
 
 const LayoutContainerStyled = styled.div`
   min-height: 100vh;
   height: auto;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
 
   & p {
@@ -13,15 +12,15 @@ const LayoutContainerStyled = styled.div`
   }
 `;
 
-// const ContentContainerStyled = styled.div`
-//   height: calc(100vh - 120px);
-// `;
+const ContentContainerStyled = styled.div`
+  height: calc(100vh - 120px);
+`;
 
-export const Layout = (/*{ children }*/) => {
+export const Layout = ({ children }) => {
   return (
     <LayoutContainerStyled>
       <Navbar />
-      {/* <ContentContainerStyled>{children}</ContentContainerStyled> */}
+      <ContentContainerStyled>{children}</ContentContainerStyled>
     </LayoutContainerStyled>
   );
 };
