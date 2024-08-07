@@ -5,8 +5,9 @@ import {
 } from "react-router-dom";
 import { Layout } from "../components/Layout/Layout";
 import { Home } from "../Pages/Home/Home";
-import { About } from "../components/About/About";
+import { About } from "../Pages/About/About";
 import { Products } from "../Pages/Products/Products";
+import { Contact } from "../Pages/Contact/Contact";
 function Routes() {
   return (
     <BrowserRouter>
@@ -20,6 +21,9 @@ function Routes() {
 
           {/* Ruta que va Productos */}
           <Route path="/Products" element={<Products />} />
+
+          {/* Ruta que va Contacto */}
+          <Route path="/Contact" element={<Contact />} />
         </ReactDomRoutes>
       </Layout>
     </BrowserRouter>

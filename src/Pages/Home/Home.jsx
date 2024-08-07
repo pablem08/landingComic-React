@@ -1,5 +1,5 @@
 import * as s from "./HomeStyles";
-import HomeImg from "/public/img/Marcas/FondoHero.jpeg";
+import HomeImg from "/img/Marcas/FondoHero.jpeg";
 
 export const Home = () => {
   return (

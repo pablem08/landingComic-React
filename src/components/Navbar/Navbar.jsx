@@ -8,8 +8,9 @@ export const Navbar = () => {
       <s.NavbarContainer>
         <s.NavbarItemsSteled>
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/About">About</NavLink>
-          <NavLink to="/Products">Products</NavLink>
+          <NavLink to="/About">Nosotros</NavLink>
+          <NavLink to="/Products">Productos</NavLink>
+          <NavLink to="/Contact">Contacto</NavLink>
         </s.NavbarItemsSteled>
       </s.NavbarContainer>
     </s.NavHeaderStled>

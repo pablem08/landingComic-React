@@ -6,16 +6,22 @@ export const HomeContainer = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
+  @media (max-width: 768px) {
+    margin-bottom: 3rem;
+  }
 `;
 
 export const HomeContainerImg = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 100%;
   img {
     width: 100%;
     padding-bottom: 75px;
 
     @media (max-width: 768px) {
-      margin-top: 80px;
+      margin-top: 20px;
+      margin-bottom: 90px;
     }
   }
 
@@ -33,7 +39,8 @@ export const HomeContainerImg = styled.div`
     text-shadow: 3px 3px 1px #f79d14;
     /* border: 1px solid red; */
     @media (max-width: 768px) {
-      display: none;
+      margin-top: 120px;
+      font-size: 20px;
     }
   }
 `;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Navbar } from "../Navbar/Navbar";
+import { Footer } from "../Footer/Footer";
 
 const LayoutContainerStyled = styled.div`
   min-height: 100vh;
@@ -13,14 +14,17 @@ const LayoutContainerStyled = styled.div`
 `;
 
 const ContentContainerStyled = styled.div`
-  height: calc(100vh - 120px);
+  /* height: calc(100vh - 120px); */
+  height: 100%;
 `;
 
+// eslint-disable-next-line react/prop-types
 export const Layout = ({ children }) => {
   return (
     <LayoutContainerStyled>
       <Navbar />
       <ContentContainerStyled>{children}</ContentContainerStyled>
+      <Footer />
     </LayoutContainerStyled>
   );
 };
