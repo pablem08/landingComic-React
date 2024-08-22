@@ -4,17 +4,17 @@ import {
   Route,
 } from "react-router-dom";
 import { Layout } from "../components/Layout/Layout";
-import { Home } from "../pages/Home/Home.jsx";
-import { About } from "../pages/About/About";
-import { Products } from "../pages/Products/Products";
-import { Contact } from "../pages/Contact/Contact";
+import { Home } from "../Pages/Home/Home.jsx";
+import { About } from "../Pages/About/About";
+import { Products } from "../Pages/Products/Products";
+import { Contact } from "../Pages/Contact/Contact";
 function Routes() {
   return (
     <BrowserRouter>
       <Layout>
         <ReactDomRoutes>
           {/* Ruta por defecto */}
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home />} />
 
           {/* Ruta al About */}
           <Route path="/About" element={<About />} />
