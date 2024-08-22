@@ -1,7 +1,5 @@
 import * as st from "./ProductsStyles.js";
-import comicBatman from "/img/Marcas/comicBatman.jpeg";
-import comicSpidy from "/img/Marcas/comicSpidy.jpeg";
-import comicSuperman from "/img/Marcas/comicSuperman.jpeg";
+import { productListData } from "../../data/Products.js";
 import { Button } from "../../components/UI/Button/Button.jsx";
 
 export const Products = () => {
@@ -9,38 +7,18 @@ export const Products = () => {
     <st.ProductsContainerStyled>
       <h2>Nuestros Productos</h2>
       <st.ProductCardContainerStyled>
-        <st.ProductCardStyled>
-          <img src={comicBatman} alt="" />
-          <st.ProductCardInfoStyled>
-            <h3>Batman n°9</h3>
+        {productListData?.map((product) => (
+          <st.ProductCardStyled key={product.id}>
+            <img src={product.src} alt={product.name} />
+            <st.ProductCardInfoStyled>
+              <h3>{product.name}</h3>
 
-            <st.ButtonContainerStyled>
-              <Button>Ver más</Button>
-            </st.ButtonContainerStyled>
-          </st.ProductCardInfoStyled>
-        </st.ProductCardStyled>
-
-        <st.ProductCardStyled>
-          <img src={comicSpidy} alt="" />
-          <st.ProductCardInfoStyled>
-            <h3>Spiderman n°15</h3>
-
-            <st.ButtonContainerStyled>
-              <Button>Ver más</Button>
-            </st.ButtonContainerStyled>
-          </st.ProductCardInfoStyled>
-        </st.ProductCardStyled>
-
-        <st.ProductCardStyled>
-          <img src={comicSuperman} alt="" />
-          <st.ProductCardInfoStyled>
-            <h3>Superman n°1</h3>
-
-            <st.ButtonContainerStyled>
-              <Button>Ver más</Button>
-            </st.ButtonContainerStyled>
-          </st.ProductCardInfoStyled>
-        </st.ProductCardStyled>
+              <st.ButtonContainerStyled>
+                <Button>Ver más</Button>
+              </st.ButtonContainerStyled>
+            </st.ProductCardInfoStyled>
+          </st.ProductCardStyled>
+        ))}
       </st.ProductCardContainerStyled>
     </st.ProductsContainerStyled>
   );

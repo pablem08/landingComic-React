@@ -8,15 +8,16 @@ export const NavHeaderStled = styled.header`
   width: 100%;
   height: 90px;
   background: linear-gradient(to top, #0f58b8, #000000);
+  z-index: 2;
 
   img {
     margin-left: 40px;
     width: 100px;
   }
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     z-index: 2;
-  }
+  } */
 `;
 
 export const NavbarContainer = styled.div`

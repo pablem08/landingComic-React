@@ -37,6 +37,7 @@ export const ProductCardStyled = styled.div`
   box-shadow: 0 0 10px #0f58b8, 0 0 40px #0f58b8;
   overflow: hidden;
   transition: transform 0.5s ease-in-out; /* Aplica la transición en el estado normal */
+  
 
   &:hover {
     -webkit-transform: scale(1.6);
@@ -81,6 +82,7 @@ export const ButtonContainerStyled = styled.div`
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
+  
 
   @media (max-width: 768px) {
     pointer-events: none;
